@@ -1,0 +1,54 @@
+.container_pyd{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    background-color: map-get($colors, nav);
+    color: map-get($colors, link);
+
+    .pyd_img{
+        width: 50%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .pyd_text{
+        width: 50%;
+        padding: 10px 0 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            border-bottom: solid 1px white;
+            
+        }
+
+        p{
+            padding-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        a{
+            text-decoration: none;
+            color: map-get($colors, link);
+            border: solid 1px map-get($colors, link);
+            padding: 5px;
+            border-radius: 10px;
+            transition: 0.5s;
+            
+            &:hover{
+                background-color: map-get($colors, link);
+                color: map-get($colors, nav);
+                border: solid 1px map-get($colors, nav);
+                transition: 0.5s;
+            }
+        }
+    }
+}

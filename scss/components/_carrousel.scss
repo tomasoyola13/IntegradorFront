@@ -1,0 +1,30 @@
+.bg-carousel-ba1 {
+    background-image: url(../../assets/img/ba1.jpg);
+}
+
+.bg-carousel-ba2 {
+    background-image: url(../../assets/img/ba2.jpg);
+}
+
+.bg-carousel-ba3 {
+    background-image: url(../../assets/img/ba3.jpg);
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center center;
+
+    svg {
+        opacity: .5;
+    }
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 37rem;
+    min-height: 95vh;
+}

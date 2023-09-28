@@ -1,0 +1,17 @@
+nav {
+    .logo {
+        img {
+            height: 50px;
+        }
+
+        a {
+            font-size: 25px;
+        }
+    }
+
+    ul {
+        .color_link_ticket {
+            color: map-get($colors, success);
+        }
+    }
+}
