@@ -1,0 +1,33 @@
+.container_form {
+    display: flex;
+    justify-content: center;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 800px;
+
+        .row {
+            width: 100%;
+            padding-top: 10px;
+
+            .col {
+                button {
+                    width: 100%;
+                    border: none;
+                    background-color: map-get($colors, success);
+                    color: map-get($colors, link);
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+    }
+}

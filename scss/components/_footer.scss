@@ -1,0 +1,31 @@
+#footer {
+    background-color: map-get($colors, footer);
+    padding: 15px;
+
+    ul {
+        min-height: 125px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+                color: map-get($colors, link);
+                transition: 0.2s;
+                &:hover{
+                    color: map-get($colors, nav);
+                    border-bottom: solid 1px map-get($colors, nav);
+                    transition: 0.2s;
+                }
+            }
+
+        }
+    }
+}
