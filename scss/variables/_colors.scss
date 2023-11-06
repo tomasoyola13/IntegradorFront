@@ -2,10 +2,17 @@ $nav: #212529;
 $footer: #1d3c4e;
 $link: white;
 $success: rgb(10, 209, 10);
+$highlight: gold;
+$azul: rgb(38, 108, 238);
+$total: rgba(38, 108, 238, 0.6);
+
 
 $colors:(
     nav: $nav,
     footer: $footer,
     link: $link,
     success: $success,
+    highlight: $highlight,
+    azul: $azul,
+    total: $total,
 )

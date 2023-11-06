@@ -99,3 +99,26 @@
         margin: 0;
     }
 }
+
+.container_descuento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 86px;
+    gap: 20px;
+    div{
+        border: solid 2px black;
+        text-align: center;
+        padding: 5px;
+    }
+    .desc_estudiante{
+        border: solid 2px map-get($colors, azul);
+    }
+    .desc_trainee{
+        @extend .desc_estudiante
+    }
+    .desc_junior{
+        border: solid 2px map-get($colors, highlight);
+    }
+
+}

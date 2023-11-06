@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencia de oradores</title>
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="../assets/img/codoacodo.png" type="image/x-icon">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/img/codoacodo.png" alt="Codo a Codo logo" class="img_header">
+                        Conf Bs As
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Lugar y fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-compra-tickets color_link_ticket" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container_descuento">
+            <div class="desc_estudiante">
+                <h2>Estudiante</h2>
+                <h4>Tiene un descuento</h4>
+                <p><b>80%</b></p>
+                <p>*Presentar documentación</p>
+            </div>
+            <div class="desc_trainee">
+                <h2>Trainee</h2>
+                <h4>Tiene un descuento</h4>
+                <p><b>50%</b></p>
+                <p>*Presentar documentación</p>
+            </div>
+            <div class="desc_junior">
+                <h2>Junior</h2>
+                <h4>Tiene un descuento</h4>
+                <p><b>15%</b></p>
+                <p>*Presentar documentación</p>
+            </div>
+        </section>
+
+        <section class="container">
+
+            <div class="titulo">
+                <p>VENTA</p>
+                <h1><b></b>VALOR DE TICKET $200</b></h1>
+            </div>
+
+            <form id="formulario" action="" class="form_tickets">
+                <div class="row gx-2">
+                    <div class="col-md mb-3">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <input type="email" id="email" class="form-control" placeholder="Email" aria-label="Email" required>
+                    </div>
+                </div>
+                <div class="row gx-2">
+                    <div class="col-md mb-3">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" min="0" max="999" class="form-control" placeholder="Cantidad"
+                            aria-label="Cantidad" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria" class="form-select">
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="total">
+                    <h5>Total a pagar: $ <span id="total"></span></h5>
+                </div>
+                <div class="row gx-2">
+                    <div class="col-md mb-3 d-grid">
+                        <button type="button" onclick="borrar()" class="ticket_button">Borrar todo</button>
+                    </div>
+                    <div class="col-md mb-3 d-grid">
+                        <button type="button" onclick="resumen()" class="ticket_button">Resumen</button>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Conferencias</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Estudiantes</a></li>
+        </ul>
+    </footer>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Script JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -163,6 +163,25 @@ nav ul .color_link_ticket {
   margin: 0;
 }
 
+.container_descuento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 86px;
+  gap: 20px;
+}
+.container_descuento div {
+  border: solid 2px black;
+  text-align: center;
+  padding: 5px;
+}
+.container_descuento .desc_estudiante, .container_descuento .desc_trainee {
+  border: solid 2px rgb(38, 108, 238);
+}
+.container_descuento .desc_junior {
+  border: solid 2px gold;
+}
+
 .container_pyd {
   min-height: 400px;
   margin-bottom: 10px;
@@ -235,6 +254,24 @@ nav ul .color_link_ticket {
 }
 .container_form .form .row .col button:hover {
   opacity: 0.8;
+}
+
+.form_tickets {
+  padding: 0 150px;
+}
+.form_tickets .total {
+  background-color: rgba(38, 108, 238, 0.6);
+  border-radius: 10px;
+}
+.form_tickets .total h5 {
+  padding: 15px;
+}
+.form_tickets .ticket_button {
+  background-color: rgb(10, 209, 10);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  min-height: 30px;
 }
 
 #footer {
